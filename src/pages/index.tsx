@@ -23,7 +23,7 @@ const Jumbotron = () => {
       {/* ------content ----- */}
       <div className='flex flex-col grow justify-center'>
         <p className='text-5xl font-bold text-white'>
-          Unveil Rwanda's Splendor
+          {"Unveil Rwanda's Splendor"}
         </p>
         <p className=' text-lg text-white max-w-[800px]'>
           Explore the land of a thousand hills, where vibrant cultures, stunning landscapes, and unforgettable wildlife encounters await your arrival.
