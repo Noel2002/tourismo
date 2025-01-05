@@ -5,12 +5,12 @@ const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <html
+    <main
       lang="en"
       className={`${montserrat.variable} font-sans`}
     >
-      <body className=' font-montserrat'>{children}</body>
-    </html>
+      <div className=' font-montserrat'>{children}</div>
+    </main>
   )
 }
 
