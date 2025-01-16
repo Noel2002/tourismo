@@ -10,9 +10,9 @@ type DashboardLayoutProps = {
 
 const DashboardLayout = (props: DashboardLayoutProps) => {
   return (
-    <div className='px-8 flex gap-16 h-screen'>
+    <div className=' flex h-screen'>
         <SideBar activeTab={props.activeTab} />
-        <div className=' py-8 space-y-6 overflow-scroll flex-1'>
+        <div className='px-8 py-8 space-y-6 overflow-scroll flex-1'>
             <div className=' flex gap-8 items-center'>
                 <SearchBar className=' flex-1' />
                 <ShoppingCartIcon />

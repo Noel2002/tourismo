@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../shared/Section';
 import PackageCard from '../shared/PackageCard';
-import { PACKAGES } from '@/lib/data';
+import { PACKAGES } from '@/lib/data/packages';
 import { Button } from '../ui/button';
 import { useRouter } from 'next/router';
 

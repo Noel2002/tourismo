@@ -15,7 +15,7 @@ const PackageCard = (props: PackageCardProps) => {
             alt={props.title} 
             className='w-full h-64 object-cover rounded-lg' 
         />
-        <p className='text-xl font-bold'>
+        <p className='text-xl font-bold line-clamp-2'>
             {props.title}
         </p>
         <div className='flex justify-between items-center'>
