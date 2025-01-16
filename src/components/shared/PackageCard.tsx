@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 type PackageCardProps = {
@@ -9,7 +10,7 @@ type PackageCardProps = {
 }
 const PackageCard = (props: PackageCardProps) => {
   return (
-    <div className=' space-y-4'>
+    <Link href={'/tours/tourid'} className=' space-y-4'>
         <img 
             src={props.image} 
             alt={props.title} 
@@ -31,7 +32,7 @@ const PackageCard = (props: PackageCardProps) => {
         <p className=' line-clamp-2 text-ellipsis'>
             {props.description}
         </p>
-    </div>
+    </Link>
   )
 }
 
