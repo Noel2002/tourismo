@@ -1,4 +1,18 @@
-export const BOOKINGS = [
+type Booking = {
+    id: string;
+    amount: number;
+    items: string[];
+    date: string;
+    package: {
+        title: string;
+        description: string;
+        price: number;
+        image: string;
+        rating: number;
+    };
+    status: "incoming" | "completed";
+}
+export const BOOKINGS: Booking[] = [
     {
         id: "TWD123345",
         amount: 100,
@@ -11,7 +25,7 @@ export const BOOKINGS = [
             image: "https://res.cloudinary.com/nowo-ltd/image/upload/v1736073731/tourismo/akagera-wildlife_szlwol.jpg",
             rating: 5,
         },
-        status: "incoming" as "incoming"
+        status: "incoming"
     },
 
 ]
