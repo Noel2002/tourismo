@@ -13,7 +13,7 @@ type SideBarProps = {
 }
 const SideBar = (props: SideBarProps) => {
   return (
-    <div className=' py-8 space-y-12 max-w-[200px]'>
+    <div className=' px-8 py-8 space-y-12 max-w-[264px]'>
         <Logo />
         <ul className=' space-y-3'>
             <Link href={"/discover"} className={cn(' py-2 px-4 flex gap-4', props.activeTab == "discover"? "bg-green text-white  rounded-md": "")}>

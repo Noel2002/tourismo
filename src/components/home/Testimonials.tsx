@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '@/components/shared/Section';
-import { TESTIMONIALS } from '@/lib/data';
+import { TESTIMONIALS } from '@/lib/data/testimonials';
 
 type TestimonialCardProps = {
     author: {
