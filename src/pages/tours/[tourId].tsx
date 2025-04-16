@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { TickCircleIcon } from '@/components/icons/TickCircleIcon';
 import { CrossCircleIcon } from '@/components/icons/CrossCircleIcon';
 import { REVIEWS } from '@/lib/data/reviews';
+import Head from 'next/head';
 
 const MainPane = ()=>{
     return (
@@ -250,19 +251,24 @@ const SidePane = ()=>{
 
 const Tour = () => {
   return (
-    <DashboardLayout>
-        <div className='space-y-8'>
-            <h1 className=' font-bold text-3xl'>The Twin Lakes Adventure</h1>
-            <div className='grid grid-cols-12 gap-6'>
-                <div className=' col-span-9'>
-                    <MainPane />
-                </div>
-                <div className=' col-span-3'>
-                    <SidePane />
+    <>
+        <Head>
+            <title>The Twin Lakes Adventure</title>
+        </Head>
+        <DashboardLayout>
+            <div className='space-y-8'>
+                <h1 className=' font-bold text-3xl'>The Twin Lakes Adventure</h1>
+                <div className='grid grid-cols-12 gap-6'>
+                    <div className=' col-span-9'>
+                        <MainPane />
+                    </div>
+                    <div className=' col-span-3'>
+                        <SidePane />
+                    </div>
                 </div>
             </div>
-        </div>
-    </DashboardLayout>
+        </DashboardLayout>
+    </>
   )
 }
 
