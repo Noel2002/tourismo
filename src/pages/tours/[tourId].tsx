@@ -3,8 +3,6 @@ import DatePicker from '@/components/shared/DatePicker';
 import React from 'react';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
-import { Checkbox } from '@/components/ui/checkbox';
-import { FormControl, FormItem, FormLabel } from '@/components/ui/form';
 import { Button } from '@/components/ui/button';
 import { TickCircleIcon } from '@/components/icons/TickCircleIcon';
 import { CrossCircleIcon } from '@/components/icons/CrossCircleIcon';
@@ -189,7 +187,7 @@ const MainPane = ()=>{
                     <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
                         {
                             REVIEWS.map((review, index) => (
-                                <div className='p-4 rounded-2xl border border-gray-400 space-y-4'>
+                                <div key={index} className='p-4 rounded-2xl border border-gray-400 space-y-4'>
                                     <div className='flex items-center gap-4'>
                                         <img 
                                             src={review.user.photo} 
